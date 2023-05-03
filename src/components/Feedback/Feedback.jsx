@@ -1,11 +1,13 @@
 import React from "react";
 import { Title, Button, Statistic, Btn, Stat } from "./Feedback.styled";
+// import { Title, Button, Btn} from "./Feedback.styled";
+// import { Statistic } from "./Statistic/Statistic";
 
 export class Feedback extends React.Component {
   state = {
     good: 0,
     neutral: 0,
-    bad: 0,
+    bad : 0,
   };
 
   goodFb = () => {
@@ -37,7 +39,6 @@ export class Feedback extends React.Component {
 
   render() {
     const { good, neutral, bad } = this.state;
-    // let total = 0;
     return (
       <div>
         <Title>Please leave feedback</Title>
@@ -65,3 +66,9 @@ export class Feedback extends React.Component {
     );
   }
 }
+
+// Feedback.propTypes = {
+//     good: PropTypes.number,
+//     neutral: PropTypes.number,
+//     bad: PropTypes.number,
+// };
