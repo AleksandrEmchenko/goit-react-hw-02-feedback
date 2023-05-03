@@ -1,7 +1,5 @@
 import React from "react";
 import { Title, Button, Statistic, Btn, Stat } from "./Feedback.styled";
-// import { Title, Button, Btn} from "./Feedback.styled";
-// import { Statistic } from "./Statistic/Statistic";
 
 export class Feedback extends React.Component {
   state = {
