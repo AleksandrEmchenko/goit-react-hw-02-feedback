@@ -45,7 +45,7 @@ class App extends React.Component {
             neutral={neutral}
             bad={bad}
             total={this.countTotalFeedback(good, neutral, bad)}
-            positivePercentage={this.positivePercentage(good, neutral, bad)}
+            positivePercentage={Number(this.positivePercentage(good, neutral, bad))}
           />
         </Section>
       </div>
